@@ -1,14 +1,14 @@
-# Flask in Docker (served by Gunicorn)
+# Flask in Docker (served with Gunicorn)
 
-Simple boilerplate to get a flask app up and running in *Docker* using *Docker Compose* for easier scaling, and served with a *Gunicorn* HTTP server.
+Simple boilerplate to get a flask app up and running in *Docker* using *Docker Compose* for easier scaling, and served with a *Gunicorn* HTTP server. No proxy!
 *The hot reload of flask in development mode it still working even if running in a Docker container. (Still detects changes to route.py and will reload server upon saving this file)*
 
 ## Tech used in this project:
 
 - [Docker 2.0.0.3](https://github.com/docker) (Container magement system)
 - [Docker-compose 1.23.2](https://github.com/docker/compose) (Container magement system)
-- [Flask 1.0.2](http://flask.pocoo.org/) (Micro framework / web server)
-- [Gunicorn 19.9.0](https://gunicorn.org/) (HTTP server)
+- [Flask 1.0.2](http://flask.pocoo.org/) (Micro framework)
+- [Gunicorn 19.9.0](https://gunicorn.org/) (Application server)
 - [Python 3.6.7](https://www.python.org/) (Language)
 - [Python-dotenv 0.10.1](https://github.com/grauwoelfchen/flask-dotenv) (Easier environment control in .flaskenv)
 
