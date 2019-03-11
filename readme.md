@@ -16,26 +16,19 @@ Simple boilerplate to get a flask app up and running in *Docker* using *Docker C
 
 - git clone or download this repo.
 - Download and install [Docker](https://www.docker.com/get-started)(*Docker-compose comes with docker desktop, so no need to install this individually*)
-- Build and start the app: **docker-compose up --build**
+- Build and start the app: **docker-compose up --build -d**  (-d to run in background use *docker-compose down* to stop)
 
 The app is now running in development mode from your local ip at port 5000. Magic of docker!
 
 To see the site, find your local ip, enter this in the browser and add port 5000. ex. *192.168.1.123:5000*
 
 ## How to change certain configs:
-- To enable production mode, edit the **.flaskenv** file to say: **FLASK_ENV=production** (should not run flask directly in production mode, use a HTTP server for that, like *Gunicorn*. Look further down to see more.)
+- To enable production mode, edit the **.flaskenv** file to say: **FLASK_ENV=production** (should not run flask directly in production mode by itself, use an HTTP server to serve the app. See further down)
 - To change port for the *flask app*: 
     - Locate the *Dockerfile* and replace the port number with the desired one.
-    - Locate the *docker-compose* file and edit the port the flask app is to be run from inside the container. ex. *docker_port:new_flask_port*
-- To change the prot on the *docker container*:
-    - Locate *docker-compose* file and add new port. ex. *new_docker_port:flask_port*
-
-
-## Running app in with [Gunicorn](https://gunicorn.org/) in Docker:
-- Locate .flaskenv and replace *development* with *production*.
-- Locate the *Dockerfile* and replace the *CMD* line with: CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "run:app"]. (*run == run.py, app == "./app/"*)
-  The app will then still be running on your local ip on port 5000 (ex. 192.168.1.123:5000), but with 4 working processes in Gunicorn in production mode.
-
+    - Locate the *docker-compose.yml* file and edit the port the flask app is to be run from inside the container. ex. *docker_port:new_flask_port*
+- To change the port on the *docker container*:
+    - Locate *docker-compose.yml* file and add new port. ex. *new_docker_port:flask_port*
 
 # Disclamer❗️
 
