@@ -1,0 +1,13 @@
+body    {
+    display: grid;
+    height: 100%;
+    background: crimson;
+}
+h1  {
+    font-size: 50px;
+    color: mediumspringgreen;
+}
+
+#hello  {
+    justify-self: center;
+}
