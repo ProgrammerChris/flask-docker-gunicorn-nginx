@@ -22,8 +22,8 @@ Simple boilerplate to get a flask app up and running in *Docker* using *Docker C
 The app is now running in development mode from your local ip. ex. *192.168.1.123*
 
 ## To run in production mode:
-    - Edit the **.flaskenv** file to say: **FLASK_ENV=production**
-    - Remove the *--reload* from the run command in the *docker-compose.yml*
+- Edit the **.flaskenv** file to say: **FLASK_ENV=production**
+- Remove the *--reload* from the run command in the *docker-compose.yml*
 
 The app is now running in production mode from your local ip. ex. *192.168.1.123*
 
