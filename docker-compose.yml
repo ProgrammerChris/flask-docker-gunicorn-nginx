@@ -2,16 +2,14 @@ version: '3'
 
 services:
   flask:
-    container_name: flask
     build: .
     volumes:
       - .:/usr/src/app
     ports:
-      - "5000:5000"
-    command: gunicorn -w 1 -b :5000 run:app
+      - "127.0.0.1:5000:5000" # Set host to be 127.0.0.0 instad of 0.0.0.0. So that it can not be accessed directly remotly with: "IP_to_server:5000".
+    command: gunicorn -w 3 -b :5000 run:app
 
   nginx:
-    container_name: nginx
     build: ./proxy
     ports:
       - "80:80"

@@ -25,9 +25,9 @@
             <h1>Hello world!</h1>
 
             <h2>You are now running flask in a docker container!</h2>
+            <p>Served with Gunicorn through Nginx!</p>
 
-            <img src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LDvsNQcb7gjHtO6Mso9%2Favatar.png?generation=1527865648850488&alt=media" alt="flask" height="256" width="256">
-            <img src="https://www.macupdate.com/images/icons256/57761.png" alt="docker" height="256" width="256">
+            <img src="{{ url_for('static', filename='images/flask-gunicorn-nginx-docker.png') }}" alt="illustration" width="719" height="284">
         </div>
     </body>
 
