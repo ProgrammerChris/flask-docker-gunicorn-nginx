@@ -7,7 +7,7 @@ services:
       - .:/usr/src/app
     ports:
       - "127.0.0.1:5000:5000" # Set host to be 127.0.0.0 instad of 0.0.0.0. So that it can not be accessed directly remotly with: "IP_to_server:5000".
-    command: gunicorn -w 3 -b :5000 run:app
+    command: gunicorn -w 3 -b :5000 run:app --reload
 
   nginx:
     build: ./proxy
