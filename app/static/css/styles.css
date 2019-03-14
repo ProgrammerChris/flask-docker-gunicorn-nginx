@@ -1,22 +1,31 @@
-body    {
+html    {
     display: grid;
     height: 100%;
-    background: crimson;
-}
-h1  {
-    font-size: 50px;
-    color: mediumspringgreen;
-    text-align: center;
+    background-image: linear-gradient(to bottom,#45F, #F29)
 }
 
-h2  {
-    text-align: center;
-}
-
-p{
-    text-align: center;
+body {
+    justify-content: center;
+    display: grid;
 }
 
 #hello  {
-    justify-self: center;
+    justify-items: center;
+    display: grid;
 }
+
+h1  {
+    font-size: 50px;
+    color: #FFF;
+}
+
+h2  {
+    font-size: 30px;
+    color: #FFF;
+}
+
+p {
+    font-size: 26px;
+    color: #FFF;
+}
+
