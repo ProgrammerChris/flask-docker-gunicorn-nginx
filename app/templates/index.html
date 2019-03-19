@@ -14,7 +14,7 @@
         <link rel="favicon" href="">
 
         <!--JavaScript here!-->
-        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+        <!--<script src="{{ url_for('static', filename='js/index.js') }}"></script>-->
 
         <!--Favicon here!-->
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
@@ -23,11 +23,6 @@
     <body>
         <div id="hello">
             <h1>Hello world!</h1>
-
-            <h2>You are now running flask in a docker container!</h2>
-            <p>Served with Gunicorn through Nginx!</p>
-
-            <img src="{{ url_for('static', filename='images/illustration.png') }}" alt="illustration" width="719" height="284">
         </div>
     </body>
 
