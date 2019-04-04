@@ -1,31 +1,13 @@
 html    {
     display: grid;
     height: 100%;
-    background-image: linear-gradient(to bottom,#45F, #F29)
-}
-
-body {
+    background: #333;
     justify-content: center;
-    display: grid;
-}
-
-#hello  {
-    justify-items: center;
-    display: grid;
+    align-content: center;
 }
 
 h1  {
     font-size: 50px;
-    color: #FFF;
-}
-
-h2  {
-    font-size: 30px;
-    color: #FFF;
-}
-
-p {
-    font-size: 26px;
     color: #FFF;
 }
 

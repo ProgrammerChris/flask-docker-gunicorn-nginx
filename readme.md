@@ -37,6 +37,6 @@ This is by no means a "how to deploy and run a production website" kind of repo�
 I take no responsibility for the use of this repo in production if choosen to do so❗️
 There are no security in place for this app other than the built in stuff in the framworks, servers and containers❗️
 
-Other than that, you are free to clone or make pull requests to this repo as you wish❗️
+Other than that, you are free to clone or fork this repo as you wish❗️
 
 Happy coding 💻
